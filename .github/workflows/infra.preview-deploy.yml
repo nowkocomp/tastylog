@@ -56,7 +56,4 @@ jobs:
             -var 'environment=${{ env.TF_ENVIRONMENT }}' \
             -var 'username=${{ secrets.MYSQL_USERNAME }}' \
             -var 'password=${{ secrets.MYSQL_PASSWORD }}' \
-            -input=false \
-            -no-color \
-            -detailed-exitcode
-          echo $?
+            -no-color -detailed-exitcode
