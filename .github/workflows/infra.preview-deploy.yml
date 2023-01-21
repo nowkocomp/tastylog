@@ -128,7 +128,7 @@ jobs:
             -auto-approve
 
       - name: Slack notify
-        if: alwasys()
+        if: always()
         uses: slackapi/slack-github-action@v1.23.0
         with:
           channel-id: 'C0S3WSU9L'
